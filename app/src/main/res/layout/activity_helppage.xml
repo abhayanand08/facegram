@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".helppage">
+    <LinearLayout
+        android:id="@+id/one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+       android:layout_marginTop="100dp"
+       android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:textSize="40dp"
+            android:textColor="#E91E63"
+            android:textStyle="bold"
+
+            android:layout_gravity="center"/>
+        <View
+            android:layout_width="205dp"
+            android:layout_height="0.9dp"
+            android:background="@android:color/black"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/one"
+        android:layout_marginTop="150dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Do by yourself."
+        android:textSize="25dp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/fontstyle2"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/three"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/two">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't depend on others."
+            android:textSize="25dp"
+            android:textColor="@android:color/black"
+            android:fontFamily="@font/fontstyle2"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.9dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/three"
+        android:layout_marginTop="280dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:padding="20dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back to login page?"
+           android:textSize="16dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log In."
+            android:textColor="#1877F2"
+            android:layout_marginLeft="6dp"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+</RelativeLayout>
